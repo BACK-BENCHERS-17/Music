@@ -43,8 +43,8 @@ class Config:
         self.SESSION3: str = getenv("STRING_SESSION3", "")
 
         # Support Links
-        self.SUPPORT_CHANNEL: str = getenv("SUPPORT_CHANNEL", "https://t.me/elevenytsmusic")
-        self.SUPPORT_CHAT: str = getenv("SUPPORT_CHAT", "https://t.me/elevenytschats")
+        self.SUPPORT_CHANNEL: str = getenv("SUPPORT_CHANNEL", "https://t.me/BotxCore")
+        self.SUPPORT_CHAT: str = getenv("SUPPORT_CHAT", "https://t.me/xorib")
 
         # Excluded Chats
         self.EXCLUDED_CHATS: List[int] = self._parse_excluded_chats()
@@ -52,7 +52,7 @@ class Config:
         # Feature Flags
         self.AUTO_END: bool = self._str_to_bool(getenv("AUTO_END", "False"))
         self.AUTO_LEAVE: bool = self._str_to_bool(getenv("AUTO_LEAVE", "False"))
-        self.THUMB_GEN: bool = self._str_to_bool(getenv("THUMB_GEN", "True"))
+        self.THUMB_GEN: bool = self._str_to_bool(getenv("THUMB_GEN", "False"))
         self.VIDEO_PLAY: bool = self._str_to_bool(getenv("VIDEO_PLAY", "True"))
         self.VIDEO_MAX_HEIGHT: int = self._parse_video_height()
 
@@ -68,10 +68,10 @@ class Config:
         self.COOKIES_URL: List[str] = self._parse_cookies()
 
         # Images
-        self.DEFAULT_THUMB: str = getenv("DEFAULT_THUMB", "https://files.catbox.moe/zlmv6v.png")
-        self.PING_IMG: str = getenv("PING_IMG", "https://files.catbox.moe/zlmv6v.png")
-        self.START_IMG: str = getenv("START_IMG", "https://files.catbox.moe/zlmv6v.png")
-        self.RADIO_IMG: str = getenv("RADIO_IMG", "https://files.catbox.moe/zlmv6v.png")
+        self.DEFAULT_THUMB: str = getenv("DEFAULT_THUMB", "https://ibb.co/ymV2hSWg")
+        self.PING_IMG: str = getenv("PING_IMG", "https://ibb.co/ymV2hSWg")
+        self.START_IMG: str = getenv("START_IMG", "https://ibb.co/ymV2hSWg")
+        self.RADIO_IMG: str = getenv("RADIO_IMG", "https://ibb.co/ymV2hSWg")
 
         # Moderation
         self.EXCLUDED_USERNAMES: List[str] = getenv("EXCLUDED_USERNAMES", "").split()
